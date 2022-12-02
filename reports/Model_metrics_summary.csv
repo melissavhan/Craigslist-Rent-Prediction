@@ -1,0 +1,39 @@
+Model name,Best Hyperparameters,MAPE %
+Baseline Model,N/A,19.759573
+Stochastic Gradient Descent Regressor,"loss = 'squared_error'
+penalty = 'elasticnet'
+l1_ratio = 0.15
+alpha = 0.1
+max_iter = 1500",16.04365
+Random Forest Model,"n_estimators = 100
+criterion = 'squared_error'
+max_depth = 6
+max_features = auto
+min_samples_split = 2
+min_samples_leaf = 1
+max_features = 1.0
+max_leaf_nodes = None
+min_impurity_decrease = 0",14.585598
+XGBoost,"scoring = 'neg_mean_absolute_percentage_error'
+learning_rate = 0.1
+max_depth = 6
+n_estimators = 200",12.296808
+LGBM Regressor,"scoring = 'neg_mean_absolute_percentage_error'
+boosting_type = 'gbdt'
+num_leaves = 31
+n_estimators = 500
+learning_rate = 0.1
+subsample = 0.5
+max_depth = 6
+class_weight = None
+",12.355998
+Piecewise model (SGDR) by number of bedrooms,"loss = 'squared_error'
+penalty = 'elasticnet'
+l1_ratio = 0.15
+alpha = 0.25
+max_iter = 1500",14.114936
+Piecewise model (SGDR) by neighborhood,"loss = 'squared_error'
+penalty = 'elasticnet'
+l1_ratio = 0.15
+alpha = 1.25
+max_iter = 1500",13.336599
