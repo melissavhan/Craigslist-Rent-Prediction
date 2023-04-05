@@ -93,3 +93,10 @@ Extract features from HTML using Regex.**
 **The best performing model was XGBoost with a Mean Absolute Percentage Error (MAPE) of 12%. The piecewise linear models also showed some interesting improvements to the SGDR model.**
 
 **Feature exploration and interpretability of the models yielded insight for renters and property owners, with answers to questions such as how much more does one pay for a property with an in-unit laundry? Is there a price premium on properties that are dog friendly?**
+
+## 6. Web App to test the linear model
+---
+
+Built a flask web app hosted in AWS Elastic Beanstalk so users can test the performance of the linear model on a property and see the rent components that make up the total predicted rent price. 
+
+[Web app link](http://craigslistrentprediction-env.eba-bjf33puu.us-west-1.elasticbeanstalk.com/)
